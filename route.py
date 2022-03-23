@@ -10,7 +10,7 @@ myapp_obj = Flask(__name__)
 @myapp_obj.route("/")
 # called view function
 def home():
-    name = {'username': 'Bao'}
+    name = 'Bao'
     city_name = 'San Jose, San Diego, San Francisco'
     return '''
 <html>
@@ -18,7 +18,7 @@ def home():
         <title>Home Page - my blog</title>
     </head>
     <body>
-        <h1>Welcome, ''' + name + ['username'] + '''!</h1>
+        <h1>Welcome, ''' + name + '''!</h1>
 
         <a href="google.com/"< Not Google</a>
 
